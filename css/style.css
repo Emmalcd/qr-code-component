@@ -1,0 +1,66 @@
+:root {
+  --white: #fff;
+  --slate300: hsl(212, 45%, 89%);
+  --slate500: hsl(216, 15%, 48%);
+  --slate900: hsl(218, 44%, 22%);
+
+  --fuente: "Outfit", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* Light background for the page */
+  background-color: var(--slate300);
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: var(--white);
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 19px 19px 3px rgba(184, 184, 184, 1);
+  -moz-box-shadow: 0px 19px 19px 3px rgba(184, 184, 184, 1);
+  box-shadow: 0px 19px 19px 3px rgba(184, 184, 184, 1);
+}
+.card__img img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.card__text {
+  font-family: var(--fuente);
+  text-align: center;
+  padding: 0 10px;
+}
+.card__text h2 {
+  font-size: larger;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+  color: var(--slate900);
+}
+.card__text p {
+  font-weight: 400;
+  margin: 30px 0;
+  font-size: 15px;
+  color: var(--slate500);
+}
+.footer {
+  font-family: var(--fuente);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
