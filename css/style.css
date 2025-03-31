@@ -14,16 +14,18 @@
 body {
   /* Light background for the page */
   background-color: var(--slate300);
-}
-.contenedor {
+  font-family: var(--fuente);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  flex-direction: column;
+  text-align: center;
 }
+
 .main {
   flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .card {
@@ -31,19 +33,16 @@ body {
   max-width: 300px;
   padding: 15px;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 19px 19px 3px rgba(184, 184, 184, 1);
-  -moz-box-shadow: 0px 19px 19px 3px rgba(184, 184, 184, 1);
-  box-shadow: 0px 19px 19px 3px rgba(184, 184, 184, 1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 .card__img img {
   max-width: 100%;
   border-radius: 8px;
-  margin: 0 auto;
 }
 
 .card__text {
-  font-family: var(--fuente);
-  text-align: center;
   padding: 0 10px;
 }
 .card__text h2 {
@@ -59,8 +58,6 @@ body {
   color: var(--slate500);
 }
 .footer {
-  font-family: var(--fuente);
   width: 100%;
   padding: 20px;
-  text-align: center;
 }
